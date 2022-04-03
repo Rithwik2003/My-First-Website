@@ -1,0 +1,422 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/* 
+  font-family: "Patrick Hand", cursive;
+  font-family: "Courgette", cursive;
+  font-family: "Roboto", sans-serif;
+  font-family: "Bebas Neue", cursive;
+  colors: 
+  #46d586
+  #05386b
+  #fff
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Patrick Hand', cursive;
+  scroll-behavior: smooth;
+}
+
+.section {
+  height: 100vh;
+}
+
+/* 
+
+//////// HERO SECTION ////////
+
+*/
+
+.hero_section,
+.skills_section {
+  background-color: #0de9ed;
+}
+
+/* 
+///////// HEADER /////////////
+*/
+
+.hero-header {
+  position: relative;
+  width: auto;
+}
+
+.hero_intro {
+  position: absolute;
+}
+
+.menu-bar {
+  height: 80px;
+}
+
+.hero-name {
+  font-family: "Courgette", cursive;
+  font-size: 25px;
+  position: absolute;
+  top: 24px;
+  left: 8%;
+  color: #05386b;
+}
+
+.menu-items {
+  display: flex;
+  float: right;
+  margin-right: 30px;
+}
+
+.menu-item {
+  margin-right: 20px;
+  line-height: 75px;
+  list-style-type: none;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.menu-item_links {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  text-decoration: none;
+  color: #05386b;
+
+}
+
+.hero_img_container {
+  position: relative;
+}
+
+.hero_img,
+#about_me-img {
+  position: relative;
+  height: 250px;
+  width: auto;
+  right: 20px;
+  top: 50px;
+}
+
+.hero_img_border,
+#about_me-border {
+  position: absolute;
+  border: 5px solid #fff;
+  right: 50px;
+  top: 50px;
+  height: 250px;
+  width: auto;
+}
+
+.hero_intro h1 {
+  position: relative;
+  font-family: "Bebas Neue", cursive;
+  color: #fff;
+  letter-spacing: 4px;
+  font-size: 50px;
+  top: 60px;
+  margin-left: 25px;
+  
+}
+
+.intro_line3 span:nth-child(1) {
+  display: block;
+  width: 340px;
+  margin-bottom: 10px;
+}
+
+.intro_line2 span, 
+.intro_line3 span {
+  background-color: #05386b;
+  font-size: 50px;
+}
+
+/* 
+
+//////////// ABOUT ME SECTION //////// 
+
+*/
+
+
+#about_me-border {
+  border: 5px solid #0de9ed;
+  left: 25px;
+  right: 70%;
+  top: 110%;
+}
+
+#about_me-img {
+  left: 25px;
+}
+
+.section_heading {
+  position: absolute;
+  font-size: 45px;
+  color: #05386b;
+  border-bottom: 2px dashed #05386b;
+  padding-bottom: 5px;
+}
+
+#about_me-heading {
+  top: 120%;
+  left: 47%;
+}
+
+#about_me-content1 {
+  position: absolute;
+  font-size: 25px;
+  top: 135%;
+  left:47%;
+  color: #0de9ed;
+}
+
+#about_me-content2 {
+  position: absolute;
+  top: 170%;
+  left: 50px;
+  width: 80%;
+  color: #0de9ed;
+}
+
+#about_me-content2 span {
+  background-color: #05386b;
+}
+
+/* 
+
+////// SKILLS SECTION //////////
+
+*/
+
+.skills_section {
+  height: auto;
+}
+
+
+skills_container {
+  position: position;
+}
+
+
+.skill_card-container_main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+
+.card {
+  position: relative;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+
+.card_face {
+  width: 250px;
+  height: 150px;
+}
+
+.card_front {
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  color: #0de9ed;
+  transform: translateY(100px);
+  transition: .4s ease;
+}
+
+.card:hover .card_front {
+  background-color: #05386b;
+  transform: translateY(0);
+}
+
+.card_back {
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  transform: translateY(-60px);
+  transition: .4s ease;
+}
+
+.card:hover .card_back {
+  color: #0de9ed;
+  transform: translateY(0);
+}
+
+
+.card_content a {
+  font-family: 'Roboto';
+  font-size: 14px;
+  margin: 10px 0 0;
+  text-decoration: none;
+  display: inline-block;
+  color: #0de9ed;
+  border: 1px solid #0de9ed;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: .3s ease;
+}
+
+
+.card_content a:hover {
+  color: #fff;
+  background-color: #0de9ed;
+}
+
+.skill_icon {
+  font-size: 70px;
+}
+
+/* 
+
+/////////// CONTACT SECTION //////////////
+
+*/
+
+.form_container {
+  width: 90%;
+  background-color: #0de9ed;
+  margin: 25px auto;
+  padding: 30px;
+  box-shadow: 3px 4px 2px rgb(136, 136, 136, .5);
+
+}
+
+.contact_heading {
+  font-size: 34px;
+  margin-bottom: 25px;
+  color: #05386b;
+  text-align: center;
+}
+
+.input_feild {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.input_feild label {
+  width: 200px;
+  font-size: 16px;
+  color: #05386b;
+}
+
+.input_feild input {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 400px;
+  letter-spacing: 2px;
+  padding: 10px 15px;
+  transition: .3s;
+}
+
+.input_feild input::placeholder, #contact_textarea::placeholder {
+  opacity: .7;
+  color: #0de9ed;
+}
+
+#contact_textarea {
+  border: none;
+  outline: none;
+  width: 90%;
+  font-size: 16px;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+
+.submit_btn {
+  margin: auto;
+  color: #0de9ed;
+  font-size: 16px;
+  background-color: #ffff;
+  cursor: pointer;
+}
+
+
+/* 
+
+////////////// FOOTER SECTION ///////////
+
+*/
+
+.footer_container {
+  background-color: hsl(183, 86%, 57%);
+  margin-top: 25px;
+  width: 100%;
+}
+
+.footer_links {
+  display: flex;
+  justify-content: center;
+  transition: .3s ease;
+}
+
+.footer_link {
+  padding: 15px;
+  list-style-type: none;
+  font-size: 25px;
+  margin-top: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer_link:hover i {
+  transition: .3s ease;
+
+}
+
+.footer_link:nth-child(1):hover i {
+  color: #4267B2;
+}
+
+.footer_link:nth-child(2):hover i {
+  color: #dd2a7b;
+}
+
+.footer_link:nth-child(3):hover i {
+  color: #4267B2;
+}
+
+.footer_link:nth-child(4):hover i {
+  color: #4267B2;
+}
+
+.copyright {
+  margin: 10px auto;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+.designer_name {
+  display: flex;
+  justify-content: center;
+  color: #05386b;
+}
+
+.designer_name p{
+  padding: 20px;
+}
+
+label #btn {
+  color: #fff;
+  font-size: 30px;
+  margin-right: 20px;
+  line-height: 80px;
+  cursor: pointer;
+  float: right;
+  display: none;
+}
+
+
